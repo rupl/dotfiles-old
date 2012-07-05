@@ -22,6 +22,8 @@
   df = diff
   dc = diff --cached
   ds = diff --staged
+  dn = diff --numstat
+  dns = diff --staged --numstat
   lg = log -p
   lol = log --graph --decorate --pretty=oneline --abbrev-commit
   lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
