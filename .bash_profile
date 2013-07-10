@@ -1,11 +1,14 @@
 # aliases
-alias ls='ls -la'
-alias cls='clear; ls'
+alias ll='ls -lah'
 alias drush='~/Sites/drush/drush'
 alias space='sudo du -h --max-depth=1'
 
 # extra paths
 export PATH=$PATH:/Users/fkchris/.gem/ruby/1.8/bin:/Applications/MAMP/Library/bin
+
+# Vole
+export GOPATH=/Users/fkchris/src/vole
+export PATH=$PATH:$GOPATH/bin
 
 # turn video into GIFs
 # https://gist.github.com/SlexAxton/4989674
