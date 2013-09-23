@@ -71,3 +71,6 @@ PS1=$txtcyn"\h ["$txtpur"\W"$txtcyn"]"$txtrst'$(BRANCH=`git rev-parse --abbrev-r
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# open a git repo homepage from within a local repo
+alias gh="open \`git remote -v | grep fetch | head -1 | cut -f2 | cut -d' ' -f1 | sed -e's/git@/http:\/\//' -e's/\.git$//' | sed -E 's/(\/\/[^:]*):/\1\//'\`"
